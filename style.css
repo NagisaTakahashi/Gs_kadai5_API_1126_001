@@ -1,0 +1,589 @@
+/* -------body--------- */
+
+html { 
+  font-size: 62.5%; 
+}
+
+body{
+  margin: 0;
+  /* -webkit-appearance: none; */
+  font-family: 'mr-eaves-modern', sans-serif;
+}
+
+
+/* -------header--------- */
+
+.header_1{
+height: 40px;
+padding: 8px;
+background-color: rgb(248,248,248);
+border-bottom: solid 1px rgb(229,231,235);
+text-align: center;
+max-width: 100%;
+}
+
+.header_logo{
+  height: 40px;
+}
+
+.header_2{
+  height: 36px;
+  padding: 8px;
+  background-color: #fff;
+  border-bottom: solid 1px rgb(229,231,235);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+
+
+
+
+/* -------main--------- */
+
+main{
+  margin-bottom: 63px; /* フッター被り分 */
+}
+
+
+
+.head_tab{
+  display: flex;
+  border-bottom: solid 1.5px #FEE5DB;
+}
+
+/* .head_tab li{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 40px;
+  font-size: 1.4rem;
+  border: 1px solid #d9d9d9;
+} */
+
+.tab{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: calc(100% / 2);
+  height: 40px;
+  font-size: 1.4rem;
+  background-color: #F5F5F5;
+  border: 1px solid #d9d9d9;
+}
+
+.tab_active{
+  background-color: #FEE5DB;
+  border: solid 1px #FEE5DB;
+}
+
+
+
+.filter_wrapper{
+  position: relative;
+}
+
+.filter {
+  display: flex;
+  margin: 1.4rem 0;
+  overflow: scroll;
+  width: calc(100vw);
+}
+
+.filter span{
+  background-color: #f5f5f5;
+  /* border: 1px solid #d9d9d9; */
+  border-radius: 0.8rem;
+  padding: 0.8rem 0.8rem;
+  margin: 0 0.6rem;
+  font-size: 1.2rem;
+  white-space: nowrap;
+  vertical-align: middle;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+}
+
+
+
+.item_quantity{
+  margin-bottom: 1.2rem;
+  margin-left: 0.6rem;
+}
+
+.item_quantity span{
+  margin: 0 0.4rem;
+}
+
+
+.category_bar{
+  width: 100%;
+  height: 2.8rem;
+  background-color: #FEE5DB;
+  display: flex;
+  align-items: center;
+}
+
+.category_bar span{
+  margin-left: 0.6rem;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+}
+
+/* ---------呼びかけ文----------- */
+
+.fitting_note{
+  margin: 1.2rem 1.4rem;
+  background-color: #f7f2f0;
+  padding: 1.2rem 0.8rem;
+}
+
+.fitting_note p{
+  text-align: center;
+  letter-spacing: 0.02rem;
+  line-height: 2rem;
+  font-size: 1.2rem;
+}
+
+
+
+/* ---------selector----------- */
+
+.sort_wrapper{
+  border-bottom: solid 2px #D9D9D9;
+}
+
+.sort{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  display: block;
+  border: 1px solid #E88D80;
+  border-radius: 0.8rem;
+  height: 4rem;
+  width: 60vw;
+  padding-right: 2rem;
+  margin: 2.4rem auto;
+  text-align: center;
+}
+
+.sort:focus{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none; /* 初期設定の青枠除去 */
+  border: 1px solid #E88D80;
+}
+
+.sort_icon{
+  background-repeat: no-repeat;
+}
+
+#sort_area{
+  background-image: url(img/icon_sort_01.svg);
+  background-size: 1.6rem;
+  background-position: right 1.4rem center;
+
+  font-size: 1.6rem;
+  letter-spacing: 0.8rem;
+}
+
+#sort_option{
+  background-image: url(img/icon_sort_02.svg);
+  background-size: 2rem;
+  background-position: right 1.2rem center;
+
+  font-size: 1.2rem;
+  letter-spacing: 0.2rem;
+}
+  
+
+
+
+
+
+/* -------contents------------ */
+
+
+
+.brand_wrapper{
+  display: flex;
+  overflow: scroll;
+  width: calc(100vw);
+  box-sizing: border-box;
+  padding: 1rem 1.2rem;
+  border-bottom: solid 1px #D9D9D9;
+}
+
+.store_wrapper{
+  display: flex;
+  flex-direction: column;
+  width: 40vw;
+}
+
+
+.brand_name{
+  display: flex;
+  align-items: center;
+  height: 4vh;
+  font-size: 1.6rem;
+  font-weight: bold;
+  width: 40vw;
+  margin-bottom: 1.6rem;
+}
+
+.brand_cbx{
+  height: 2rem;
+  width: 2rem;
+  margin-right: 0.6rem;
+}
+
+input[type="checkbox"] {
+  accent-color: #6D5E55;
+}
+
+.store_name{
+  display: flex;
+  flex-direction: column;
+  font-size: 1.2rem;
+  width: 40vw;
+}
+
+.checkbox-note span {
+  color: #00a6dd;
+}
+
+.checkbox-note img{
+  width: 1.2rem;
+  height: 1.2rem;
+  vertical-align: middle;
+  filter: invert(41%) sepia(100%) saturate(622%) hue-rotate(155deg) brightness(102%) contrast(105%);  /* SVGの色変更 */
+}
+
+
+.store_name_text span{
+  width: calc(40vw - 30px);
+  vertical-align: bottom;
+  white-space:nowrap;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+}
+
+.store_item{
+  display: flex;
+}
+
+.store_cbx{
+  height: 1.4rem;
+  width: 1.4rem;
+  margin-left: 1rem;
+  margin-right: 0.6rem;
+}
+
+
+.item_wrapper{
+  display: flex;
+  padding-right: 1.2rem;
+}
+
+.item_card{
+  display: flex;
+  flex-direction: column;
+  width: 20vw;
+  margin-right: 0.6rem;
+}
+
+.item_card img{ 
+  width: 20vw;
+  height: 14vh;
+  object-fit: cover;
+}
+
+.item_card p{
+  font-size: 1rem;
+  margin-top: 0.4rem;
+}
+
+.item_price{
+  font-weight: bold;
+}
+
+.checkbox-note{
+  margin-bottom: 1.4rem;
+}
+
+
+
+
+
+
+/* ---------map----------- */
+
+.map_wrapper{
+  padding :2rem 0;
+}
+
+
+.checked_note{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1.2rem 1.4rem;
+  padding: 1.2rem 0.8rem;
+}
+
+.checked_map{
+  height: 2rem;
+  width: 2rem;
+}
+
+.checked_note p{
+  padding-left: 0.8rem;
+  font-size: 1.2rem;
+  letter-spacing: 0.08rem;
+}
+
+
+.btn{
+  display: block;
+  width: 280px;
+  padding: 21px 0;
+  background-color: #E88D80;
+  border-radius: 50px;
+  color: #fff;
+  font-size: 1.8rem;
+  margin: 40px auto;
+  text-align: center;
+  letter-spacing: 0.2rem;
+  text-decoration: none;
+}
+
+.map{
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------未使用----------- */
+
+
+.product-list{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.product-list > li {
+  background-color: #fff;
+  flex: 0 33.33%;
+  max-width: 33.33%;
+}
+
+.product-item {
+  border-right: 1px solid #d9d9d9;
+  height: 100%;
+}
+
+
+
+.product-item__img {
+  display: block;
+  /* height: 15.1rem; */
+  /* width: 100%; */
+  margin-right: -0.1rem;
+  position: relative;
+  overflow: hidden;
+} 
+
+.product-item__img img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.product-item__info {
+  padding: 0.6rem 0.4rem 1.6rem;
+}
+
+.product-item__brand {
+  height: 1.2rem;
+  font-size: 1.2rem;
+  color: #666;
+  white-space: nowrap;
+  overflow: hidden;
+  margin-bottom: 0.6rem;
+}
+
+.product-item__name {
+  height: 1.2rem;
+  font-size: 1.2rem;
+  /* font-weight: 600; */
+  /* white-space: nowrap; */
+  overflow: hidden;
+  margin-bottom: 0.6rem;
+}
+
+.product-item__sku {
+  height: 1.0rem;
+  font-size: 1.0rem;
+  color: #666;
+  /* font-weight: 600; */
+  /* white-space: nowrap; */
+  overflow: hidden;
+  margin-bottom: 0.6rem;
+}
+
+.product-item__desc_wrapper{
+  position: relative;
+}
+
+.product-item__desc {
+  height: 2.0rem;
+  width: calc(100% - 16px);
+  font-size: 1rem;
+  /* white-space: nowrap; */
+  /* overflow: hidden; */
+  margin-bottom: 0.6rem;
+} 
+ 
+.name_edit{
+  position: absolute;
+  bottom: 0.2rem;
+  right: 0;
+  width: 1.2rem;
+}
+
+.product-item__bar {
+  border-bottom: dotted 0.5px #666;
+  margin-bottom: 1rem;
+}
+
+
+.btn-itemdetail_wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.btn-itemdetail {
+  background-color: #e88d80;
+  border-radius: 0.4rem;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.6rem;
+  width: 11rem;
+  font-size: 1rem;
+  text-decoration: none;
+} 
+
+
+
+
+
+
+/* -------footer--------- */
+
+.footer{
+  position: fixed;
+  bottom: 0;
+  height: 62px;
+  box-sizing: border-box;
+  padding: 0 8px;
+  background-color: rgb(248,248,248);
+  border-top: solid 1px rgb(229,231,235);
+  text-align: center;
+  width: 100%;
+}
+
+
+.footer_list{
+  width: 20%;
+}
+
+.footer-icons{
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 0.875rem;
+  margin: 0;
+  padding: 10px 0;
+}
+
+.footer-icons img{
+  width: 24px;
+  height: 24px;
+  margin: 0;
+  padding: 0;
+
+}
+
+.footer-icons p {
+  margin: 0;
+  padding: 0;
+}
+
+
+/* メディアクエリ（PC版） */
+
+
+
+@media screen and (min-width:768px){
+  body {
+  width: 375px;
+  margin: 0 auto;
+  }
+
+  .filter{
+    width: calc(375px);
+  }
+
+
+  .sort{
+    width: 300px;
+  }
+
+  .brand_wrapper{
+    width: 375px;
+  }
+
+  .store_wrapper{
+    width: 150px;
+  }
+
+  .item_card{
+    width: 75px;
+  }
+
+  .item_card img{
+    width: 75px;
+    height: 89.04px;
+    object-fit: cover;
+  }
+
+
+  .footer {
+    width: 375px;
+    margin: 0 auto;
+  }
+
+}
+
+
