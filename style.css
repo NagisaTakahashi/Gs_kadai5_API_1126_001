@@ -158,6 +158,11 @@ main{
   border-bottom: solid 2px #D9D9D9;
 }
 
+select {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
 .sort{
   -webkit-appearance: none;
   -moz-appearance: none;

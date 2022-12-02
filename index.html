@@ -143,7 +143,7 @@
 
         <!-- jQueryで記入代用 -->
         
-        <li class="brand_wrapper">
+        <!-- <li class="brand_wrapper">
 
           <div class="store_wrapper">
 
@@ -202,72 +202,8 @@
             </div>
           </div>
       
-        </li>
-
-        <!-- JQueryに書き写す用 -->
-
-        <!-- <li class="brand_wrapper">
-
-          <div class="store_wrapper">
-        
-            <div class="brand_name">
-              <input type="checkbox" name="brand_name_checkbox" class="brand_cbx" id="cbx-brand-001">
-              <label for="cbx-brand-001">${brandlist[i].brand}</label>
-            </div>
-        
-        
-            <div class="store_name" id="brand_001">
-        
-              <div class="store_item">
-                <input type="checkbox" name="store_name_checkbox" class="store_cbx cbx-store-001" id="cbx-store-001">
-                <div class="store_name_text">
-                  <label for="cbx-store-001">${brandlist[i].storename_01}</label>
-                  <p class="checkbox-note">(<img src="img/icon_store.svg" alt="">${brandlist[i].storeplace_01})</p>
-                </div>
-              </div>
-        
-              
-        
-              <div class="store_item">
-                <input type="checkbox" name="store_name_checkbox" class="store_cbx cbx-store-001" id="cbx-store-002">
-                <div class="store_name_text">
-                  <label for="cbx-store-002">${brandlist[i].storename_02}</label>
-                  <p class="checkbox-note">(<img src="img/icon_store.svg" alt="">${brandlist[i].storeplace_02})</p>
-                </div>
-              </div>
-        
-            </div>
-        
-          </div>
-        
-          <div class="item_wrapper">
-            <div class="item_card">
-              <img src="img/item/${brandlist[i].brand}/favorite_01.jpg" alt="">
-              <div class="item-name"><p>商品名</p></div>
-              <div class="item_SKU"><p>カラー/サイズ</p></div>
-              <div class="item_price"><p>価格</p></div>
-            </div>
-            <div class="item_card">
-              <img src="img/item/${brandlist[i].brand}/favorite_02.jpg" alt="">
-              <div class="item-name"><p>商品名</p></div>
-              <div class="item_SKU"><p>カラー/サイズ</p></div>
-              <div class="item_price"><p>価格</p></div>
-            </div>
-            <div class="item_card">
-              <img src="img/item/${brandlist[i].brand}/favorite_03.jpg" alt="">
-              <div class="item-name"><p>商品名</p></div>
-              <div class="item_SKU"><p>カラー/サイズ</p></div>
-              <div class="item_price"><p>価格</p></div>
-            </div>
-            <div class="item_card">
-              <img src="img/item/${brandlist[i].brand}/favorite_04.jpg" alt="">
-              <div class="item-name"><p>商品名</p></div>
-              <div class="item_SKU"><p>カラー/サイズ</p></div>
-              <div class="item_price"><p>価格</p></div>
-            </div>
-          </div>
-        
         </li> -->
+
 
 
       </ul>
@@ -320,44 +256,13 @@
 
 
 
-
-
-
-
-
-
-
-
   <!-- JQueryが先!! -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <!-- 次にJS! -->
-  <!-- <script src="main.js"></script> -->
   <script src="data.js"></script>
 
   <!-- Firebase -->
-  <!-- <script type="module" src="simplewakeru.js"></script> -->
-
-  <script type="module">
-    // Import the functions you need from the SDKs you need
-    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.1.0/firebase-app.js";
-    import { getDatabase, ref, push, set, onChildAdded, remove, onChildRemoved } 
-    from "https://www.gstatic.com/firebasejs/9.1.0/firebase-database.js";
-    // TODO: Add SDKs for Firebase products that you want to use
-    // https://firebase.google.com/docs/web/setup#available-libraries
-  
-    // Your web app's Firebase configuration
-    const firebaseConfig = {
-      apiKey: "一時的に削除",
-      authDomain: "mycloset-test.firebaseapp.com",
-      projectId: "mycloset-test",
-      storageBucket: "mycloset-test.appspot.com",
-      messagingSenderId: "914107919879",
-      appId: "1:914107919879:web:79ffee4407a255348804a2"
-    };
-  
-    // Initialize Firebase
-    const app = initializeApp(firebaseConfig);
-  </script>
+  <!-- Firebaseの仕様無し-->
 
 
 </body>
