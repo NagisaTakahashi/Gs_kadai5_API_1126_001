@@ -176,7 +176,7 @@ const CONFIGURATION = {
   ],
 
   "mapOptions": {"center":{"lat":38.0,"lng":-100.0},"fullscreenControl":true,"mapTypeControl":false,"streetViewControl":false,"zoom":4,"zoomControl":true,"maxZoom":21,"mapId":"3c2b35fc8f222ef2"},
-  "mapsApiKey": "一時的に削除",
+  "mapsApiKey": "一時的削除",
   "capabilities": {"input":true,"autocomplete":true,"directions":false,"distanceMatrix":true,"details":false,"actions":false}
 };
 

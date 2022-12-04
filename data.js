@@ -345,68 +345,76 @@ for (let i = 0; i < brandlist.length; i++){
  
   <li class="brand_wrapper">
 
-  <div class="store_wrapper">
+    <div class="store_wrapper">
 
-    <div class="brand_name">
-      <input type="checkbox" name="brand_name_checkbox" class="brand_cbx" id="cbx-brand-${brandlist[i].num}">
-      <label for="cbx-brand-${brandlist[i].num}">${brandlist[i].brand}</label>
-    </div>
+      <div class="brand_name">
+        <input type="checkbox" name="brand_name_checkbox" 
+        value="${brandlist[i].brand}"
+        class="brand_cbx" 
+        id="cbx-brand-${brandlist[i].num}">
 
-
-    <div class="store_name" id="brand_${brandlist[i].num}-store">
-
-      <div class="store_item">
-        <input type="checkbox" name="cbx-brand-${brandlist[i].num}-store" 
-        class="store_cbx cbx-brand-${brandlist[i].num}-store" 
-        id="cbx-brand-${brandlist[i].num}-store-001">
-        <div class="store_name_text">
-          <label for="cbx-store-001">${brandlist[i].storename_01}</label>
-          <p class="checkbox-note">(<img src="img/icon_store.svg" alt="">${brandlist[i].storeplace_01})</p>
-        </div>
+        <label for="cbx-brand-${brandlist[i].num}">${brandlist[i].brand}</label>
       </div>
 
-      <div class="store_item">
-        <input type="checkbox" name="cbx-brand-${brandlist[i].num}-store" 
-        class="store_cbx cbx-brand-${brandlist[i].num}-store" 
-        id="cbx-brand-${brandlist[i].num}-store-002">
-        <div class="store_name_text">
-          <label for="cbx-store-002">${brandlist[i].storename_02}</label>
-          <p class="checkbox-note">(<img src="img/icon_store.svg" alt="">${brandlist[i].storeplace_02})</p>
+
+      <div class="store_name" id="brand_${brandlist[i].num}-store">
+
+        <div class="store_item">
+          <input type="checkbox" name="cbx-brand-${brandlist[i].num}-store" 
+          value="${brandlist[i].storename_01}"
+          class="store_cbx cbx-brand-${brandlist[i].num}-store" 
+          id="cbx-brand-${brandlist[i].num}-store-001">
+
+          <div class="store_name_text">
+            <label for="cbx-store-001">${brandlist[i].storename_01}</label>
+            <p class="checkbox-note">(<img src="img/icon_store.svg" alt="">${brandlist[i].storeplace_01})</p>
+          </div>
         </div>
+
+        <div class="store_item">
+          <input type="checkbox" name="cbx-brand-${brandlist[i].num}-store" 
+          value="${brandlist[i].storename_02}"
+          class="store_cbx cbx-brand-${brandlist[i].num}-store" 
+          id="cbx-brand-${brandlist[i].num}-store-002">
+
+          <div class="store_name_text">
+            <label for="cbx-store-002">${brandlist[i].storename_02}</label>
+            <p class="checkbox-note">(<img src="img/icon_store.svg" alt="">${brandlist[i].storeplace_02})</p>
+          </div>
+        </div>
+
       </div>
 
     </div>
 
-  </div>
+    <div class="item_wrapper">
+      <div class="item_card">
+        <img src="img/item/${brandlist[i].foldername}/favorite_01.jpg" alt="">
+        <div class="item-name"><p>商品名</p></div>
+        <div class="item_SKU"><p>カラー/サイズ</p></div>
+        <div class="item_price"><p>価格</p></div>
+      </div>
+      <div class="item_card">
+        <img src="img/item/${brandlist[i].foldername}/favorite_02.jpg" alt="">
+        <div class="item-name"><p>商品名</p></div>
+        <div class="item_SKU"><p>カラー/サイズ</p></div>
+        <div class="item_price"><p>価格</p></div>
+      </div>
+      <div class="item_card">
+        <img src="img/item/${brandlist[i].foldername}/favorite_03.jpg" alt="">
+        <div class="item-name"><p>商品名</p></div>
+        <div class="item_SKU"><p>カラー/サイズ</p></div>
+        <div class="item_price"><p>価格</p></div>
+      </div>
+      <div class="item_card">
+        <img src="img/item/${brandlist[i].foldername}/favorite_04.jpg" alt="">
+        <div class="item-name"><p>商品名</p></div>
+        <div class="item_SKU"><p>カラー/サイズ</p></div>
+        <div class="item_price"><p>価格</p></div>
+      </div>
+    </div>
 
-  <div class="item_wrapper">
-    <div class="item_card">
-      <img src="img/item/${brandlist[i].foldername}/favorite_01.jpg" alt="">
-      <div class="item-name"><p>商品名</p></div>
-      <div class="item_SKU"><p>カラー/サイズ</p></div>
-      <div class="item_price"><p>価格</p></div>
-    </div>
-    <div class="item_card">
-      <img src="img/item/${brandlist[i].foldername}/favorite_02.jpg" alt="">
-      <div class="item-name"><p>商品名</p></div>
-      <div class="item_SKU"><p>カラー/サイズ</p></div>
-      <div class="item_price"><p>価格</p></div>
-    </div>
-    <div class="item_card">
-      <img src="img/item/${brandlist[i].foldername}/favorite_03.jpg" alt="">
-      <div class="item-name"><p>商品名</p></div>
-      <div class="item_SKU"><p>カラー/サイズ</p></div>
-      <div class="item_price"><p>価格</p></div>
-    </div>
-    <div class="item_card">
-      <img src="img/item/${brandlist[i].foldername}/favorite_04.jpg" alt="">
-      <div class="item-name"><p>商品名</p></div>
-      <div class="item_SKU"><p>カラー/サイズ</p></div>
-      <div class="item_price"><p>価格</p></div>
-    </div>
-  </div>
-
-</li>
+  </li>
   
   `;
 
@@ -416,74 +424,118 @@ for (let i = 0; i < brandlist.length; i++){
 
 // ブランド名のチェックボックスをONにするとストア名もONになる
 
+$(function() {
+  for (let i = 0; i < brandlist.length; i++){
+    // 「全選択」する
+    $(`#cbx-brand-${brandlist[i].num}`).on('click', function() {
+      $(`input[name="cbx-brand-${brandlist[i].num}-store"]`).prop('checked', this.checked);
+    });
 
+    // 「全選択」以外の子チェックボックスがクリックされたら、
+    $(`input[name="cbx-brand-${brandlist[i].num}-store"]`).on('click', function() {
+      if ($(`#brand_${brandlist[i].num}-store :checked`).length == $(`#brand_${brandlist[i].num}-store :input`).length) {
+        // 全ての子チェックボックスにチェックが入っていたら、親「全選択」 = checked(true)
+        $(`#cbx-brand-${brandlist[i].num}`).prop('checked', true);
+      } else {
+        // それ以外（1つでも2つでもチェックが入っていたら）、親「全選択」 = checked解除(false)
+        $(`#cbx-brand-${brandlist[i].num}`).prop('checked', false);
+      }
+    });
 
-  $(function() {
+  }
+});
 
-    for (let i = 0; i < brandlist.length; i++){
+//参考URL:https://agohack.com/checkbox-all-selected/
 
-
-      // 「全選択」する
-      $(`"#cbx-brand-${brandlist[i].num}"`).on('click', function() {
-        $(`'input[name="cbx-brand-${brandlist[i].num}-store"]'`).prop('checked', this.checked);
-      });
-
-      // 「全選択」以外のチェックボックスがクリックされたら、
-      $(`'input[name="cbx-brand-${brandlist[i].num}-store"]'`).on('click', function() {
-        if ($(`'#brand_${brandlist[i].num}-store: checked'`).length == $(`'#brand_${brandlist[i].num}-store: input'`).length) {
-          // 全てのチェックボックスにチェックが入っていたら、「全選択」 = checked
-          $(`"#cbx-brand-${brandlist[i].num}"`).prop('checked', true);
-        } else {
-          // 1つでもチェックが入っていたら、「全選択」 = checked
-          $(`"#cbx-brand-${brandlist[i].num}"`).prop('checked', false);
-        }
-      });
-
-    }
-  });
-
-
-
-
-
-//チェックボックス
-
-// <label for="all"><input type="checkbox" name="allChecked" id="all">全選択</label>
-
-// <div id="boxes">
-//   <label><input type="checkbox" name="chk[]" value="A">選択肢 A</label>
-//   <label><input type="checkbox" name="chk[]" value="B">選択肢 B</label>
-//   <label><input type="checkbox" name="chk[]" value="C">選択肢 C</label>
-//   <label><input type="checkbox" name="chk[]" value="D">選択肢 D</label>
-// </div>
-
-
-// $(function() {
-//   // 「全選択」する
-//   $('#all').on('click', function() {
-//     $("input[name='chk[]']").prop('checked', this.checked);
-//   });
-
-//   // 「全選択」以外のチェックボックスがクリックされたら、
-//   $("input[name='chk[]']").on('click', function() {
-//     if ($('#boxes :checked').length == $('#boxes :input').length) {
-//       // 全てのチェックボックスにチェックが入っていたら、「全選択」 = checked
-//       $('#all').prop('checked', true);
-//     } else {
-//       // 1つでもチェックが入っていたら、「全選択」 = checked
-//       $('#all').prop('checked', false);
-//     }
-//   });
-// });
 
 
 //選択された店舗のみ抜粋して表示する
 
 
-
-
 //チェックボックスのcheckedを取得
+// $('input[type="checkbox"]').prop('checked');
 
-//googlemapのマーカーのうちcheckedのもののみ再レンダリング
+//チェックボックスをチェックしたら発動
+$('input[type="checkbox"]').change(function() {
+
+  //prop()でチェックの状態を取得し変数に格納
+  const prop = $(this).prop('checked');
+  //そのチェック状態のvalue値を取得し変数に格納
+  const val = $(this).val();
+
+  //上記で取得した変数をテキストに出力
+  console.log(val,prop);
+
+    //prop=trueなもののみを全て取得して変数に格納する
+
+    for (let i = 0; i < brandlist.length; i++){
+    let checked_store = $(`input[name=cbx-brand-${brandlist[i].num}-store]:checked`);
+    console.log(checked_store);
+
+    //checked_store=１店舗以上にチェックが入っているとき
+    // if( 0 < checked_store.length ) {
+    //   for(let checked_data of checked_store) {
+    //     console.log(checked_data.value,prop); 
+    //   }
+      let array = [];
+      array =  $(`brand_${brandlist[i].num}-store`).val();
+      console.log('選択された店舗 : ', array);
+    }
+    // console.log(checked_store);
+  }
+// }
+); 
+
+
+// $(function() {
+
+//   for (let i = 0; i < brandlist.length; i++){
+
+//   let selectedVals = [];
+//   selectedVals = $(`brand_${brandlist[i].num}-store`).val();
+//   console.log('selectedVals : ', selectedVals);
+
+// //     $('input[type="checkbox"]').change(function() {
+// //       // 配列を宣言
+// //       const arr = [];
+      
+// //       $(`input[name=cbx-brand-${brandlist[i].num}-store]:checked`).each(function(){
+// //           // チェックされている選択肢の値を配列に格納
+// //           arr.push($(this).val());
+// //       });
+
+// //       console.log(arr);
+
+// //     })
+//   }
+// });
+
+
+
+// let selectedVals = [];
+// selectedVals = $(`brand_${brandlist[i].num}-store`).val();
+// console.log('selectedVals : ', selectedVals);
+
+
+
+
+// 参考URL:https://www.flatflag.nir87.com/prop-1812
+// 参考URL:https://gray-code.com/javascript/get-only-selected-checkboxes/
+
+
+
+//googlemapのマーカーのうちcheckedのみ再レンダリング
+
+
+
+
+
+//今後の改修したいところ
+//①nullの店舗を消したい（仮説→テンプレートリテラルを分割してDivで挟む？）
+//②店舗にリンクとモーダルを付けたい（例：IENAルミネ店をクリックすると、店舗情報が見れる）
+//写真（店舗の雰囲気「あ〜ここね！」がわかる、営業時間、ルミネのフロアガイド（階数と場所）、、）
+
+
+
 
 
